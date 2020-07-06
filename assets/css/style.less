@@ -1,4 +1,19 @@
 
+h3 {
+    font-family: "Gotham-Book";
+    font-size: 43px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    &::before {
+        content:'';
+        border-bottom: 1px solid #000;
+        width: 100px;
+        position: absolute;
+        top: -30px;
+        left: 45%;
+    }
+}
 .slogan {
     text-transform: uppercase;
     font-family: "Gotham-Book"; 
