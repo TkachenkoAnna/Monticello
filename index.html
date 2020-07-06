@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monticello</title>
+    <meta name="description" content="Monticello makes the world beautiful every day">
+    <meta name="keywords" content="monticello, business, prosperity, building, projects">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--Critial CSS-->
+    <style>
+        *{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box}body{font-family:Gotham-Bold;overflow-x:hidden;color:#2c4058;min-width:320px}.container{width:90%;max-width:1170px;margin:0 auto}li{list-style:none}li a{text-decoration:none}.social_icons{width:calc(15% - 30px)}.social_icons .icons_wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding-top:5px}.social_icons .icons_wrap li{width:calc(33.333% - 20px);position:relative;cursor:pointer}.social_icons .icons_wrap li a{content:'';height:40px;width:40px;position:absolute;top:0;right:0;border:1px solid #fff;border-radius:50%}.social_icons .icons_wrap li span{color:#fff;position:absolute;top:30%;right:35%}.social_icons .icons_wrap li:hover a{background-color:#fff}.social_icons .icons_wrap li:hover span{color:#7e5aff}#mobile_menu{display:none;position:fixed;top:-100%;width:100%;height:100%;background-color:#7e5aff;padding-top:80px;overflow:auto;-webkit-transition:all,.2s ease;-o-transition:all,.2s ease;transition:all,.2s ease;z-index:2}#mobile_menu ul{text-align:center}#mobile_menu ul li{list-style:none;line-height:60px}#mobile_menu ul li a{text-decoration:none;color:#fff;text-transform:uppercase;font-size:18px}#mobile_menu ul li:hover{background-color:#57b2ff}#mobile_menu.is-active{top:0}#sticky_menu.fixed{position:fixed;padding-top:5px;z-index:1500;background:-o-linear-gradient(320deg,#7d5cf9 0,#57b2ff 100%);background:linear-gradient(130deg,#7d5cf9 0,#57b2ff 100%)}header{position:relative}header #sticky_menu{width:100%;position:absolute;top:0;left:0;z-index:1200;padding-top:50px;-webkit-transition:all ease .2s;-o-transition:all ease .2s;transition:all ease .2s}header #sticky_menu #menu_wrap{line-height:60px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}header #sticky_menu #menu_wrap .logo{width:calc(22% - 15px);line-height:50px}header #sticky_menu #menu_wrap #menu{width:calc(60% - 25px)}header #sticky_menu #menu_wrap #menu #menu_list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}header #sticky_menu #menu_wrap #menu #menu_list li{position:relative}header #sticky_menu #menu_wrap #menu #menu_list li a{color:#fff;text-transform:uppercase;font-family:Gotham-Book;font-size:14px}header #sticky_menu #menu_wrap #menu #menu_list li::before{position:absolute;top:25px;left:-20px;content:'';height:7px;width:7px;border:1px solid #fff;border-radius:50%}header #sticky_menu #menu_wrap #menu #menu_list li.active::before,header #sticky_menu #menu_wrap #menu #menu_list li:hover::before{background-color:#fff}header #sticky_menu #menu_wrap #mobile_icon button{display:none}header .top_slider_wrap .top_slider{position:relative}header .top_slider_wrap .top_slider .slider_item{position:relative;width:100%;height:100%;max-height:801px;outline:0}header .top_slider_wrap .top_slider .slider_item .slide_img{width:100%;height:100%}header .top_slider_wrap .top_slider .slider_item .slide_text{position:absolute;top:41%;width:100%;text-align:center;color:#fff;text-transform:uppercase;padding-bottom:200px}header .top_slider_wrap .top_slider .slider_item .slide_text h2{font-size:80px;word-spacing:2px;letter-spacing:4px;line-height:130px}header .top_slider_wrap .top_slider .slider_item .slide_text span{font-family:Gotham-Book;font-size:18px;letter-spacing:5px;word-spacing:2px}header .top_slider_wrap .top_slider .slick-dots{position:absolute;left:95%;top:37%;cursor:pointer}header .top_slider_wrap .top_slider .slick-dots li{display:block;margin-bottom:30px}header .top_slider_wrap .top_slider .slick-dots li button::before{content:'';height:7px;width:7px;border:1px solid #fff;border-radius:50%;background-color:transparent;opacity:1}header .top_slider_wrap .top_slider .slick-dots li button:focus:before,header .top_slider_wrap .top_slider .slick-dots li button:hover:before{background-color:#fff}header .top_slider_wrap .scroll_down{content:'';height:40px;width:40px;border:1px solid #fff;border-radius:50%;position:absolute;bottom:53px;left:49%}header .top_slider_wrap .scroll_down span{border-left:1px solid #fff;border-bottom:1px solid #fff;width:6px;height:6px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);position:absolute;bottom:45%;left:44%}.social_icons{width:calc(15% - 30px)}.social_icons .icons_wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding-top:5px}.social_icons .icons_wrap li{width:calc(33.333% - 20px);position:relative;cursor:pointer}.social_icons .icons_wrap li a{content:'';height:40px;width:40px;position:absolute;top:0;right:0;border:1px solid #fff;border-radius:50%}.social_icons .icons_wrap li span{color:#fff;position:absolute;top:30%;right:35%}.social_icons .icons_wrap li:hover a{background-color:#fff}.social_icons .icons_wrap li:hover span{color:#7e5aff}#mobile_menu{display:none;position:fixed;top:-100%;width:100%;height:100%;background-color:#7e5aff;padding-top:80px;overflow:auto;-webkit-transition:all,.2s ease;-o-transition:all,.2s ease;transition:all,.2s ease;z-index:2}#mobile_menu ul{text-align:center}#mobile_menu ul li{list-style:none;line-height:60px}#mobile_menu ul li a{text-decoration:none;color:#fff;text-transform:uppercase;font-size:18px}#mobile_menu ul li:hover{background-color:#57b2ff}#mobile_menu.is-active{top:0}#sticky_menu.fixed{position:fixed;padding-top:5px;z-index:1500;background:-o-linear-gradient(320deg,#7d5cf9 0,#57b2ff 100%);background:linear-gradient(130deg,#7d5cf9 0,#57b2ff 100%)}header{position:relative}header #sticky_menu{width:100%;position:absolute;top:0;left:0;z-index:1200;padding-top:50px;-webkit-transition:all ease .2s;-o-transition:all ease .2s;transition:all ease .2s}header #sticky_menu #menu_wrap{line-height:60px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}header #sticky_menu #menu_wrap .logo{width:calc(22% - 15px);line-height:50px}header #sticky_menu #menu_wrap #menu{width:calc(60% - 25px)}header #sticky_menu #menu_wrap #menu #menu_list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}header #sticky_menu #menu_wrap #menu #menu_list li{position:relative}header #sticky_menu #menu_wrap #menu #menu_list li a{color:#fff;text-transform:uppercase;font-family:Gotham-Book;font-size:14px}header #sticky_menu #menu_wrap #menu #menu_list li::before{position:absolute;top:25px;left:-20px;content:'';height:7px;width:7px;border:1px solid #fff;border-radius:50%}header #sticky_menu #menu_wrap #menu #menu_list li.active::before,header #sticky_menu #menu_wrap #menu #menu_list li:hover::before{background-color:#fff}header #sticky_menu #menu_wrap #mobile_icon button{display:none}header .top_slider_wrap .top_slider{position:relative}header .top_slider_wrap .top_slider .slider_item{position:relative;width:100%;height:100%;max-height:801px;outline:0}header .top_slider_wrap .top_slider .slider_item .slide_img{width:100%;height:100%}header .top_slider_wrap .top_slider .slider_item .slide_text{position:absolute;top:41%;width:100%;text-align:center;color:#fff;text-transform:uppercase;padding-bottom:200px}header .top_slider_wrap .top_slider .slider_item .slide_text h2{font-size:80px;word-spacing:2px;letter-spacing:4px;line-height:130px}header .top_slider_wrap .top_slider .slider_item .slide_text span{font-family:Gotham-Book;font-size:18px;letter-spacing:5px;word-spacing:2px}header .top_slider_wrap .top_slider .slick-dots{position:absolute;left:95%;top:37%;cursor:pointer}header .top_slider_wrap .top_slider .slick-dots li{display:block;margin-bottom:30px}header .top_slider_wrap .top_slider .slick-dots li button::before{content:'';height:7px;width:7px;border:1px solid #fff;border-radius:50%;background-color:transparent;opacity:1}header .top_slider_wrap .top_slider .slick-dots li button:focus:before,header .top_slider_wrap .top_slider .slick-dots li button:hover:before{background-color:#fff}header .top_slider_wrap .scroll_down{content:'';height:40px;width:40px;border:1px solid #fff;border-radius:50%;position:absolute;bottom:53px;left:49%}header .top_slider_wrap .scroll_down span{border-left:1px solid #fff;border-bottom:1px solid #fff;width:6px;height:6px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);position:absolute;bottom:45%;left:44%}@media screen and (max-width:900px){.social_icons{width:calc(15% - 5px)}.social_icons .icons_wrap li{width:calc(33.333% - 10px)}.social_icons .icons_wrap li a{height:35px;width:35px}header #sticky_menu #menu_wrap .logo{width:calc(25% - 10px);line-height:40px}header #sticky_menu #menu_wrap #menu{width:calc(50% - 20px)}header #sticky_menu #menu_wrap #menu #menu_list li::before{display:none}header .top_slider_wrap .top_slider .slider_item{max-height:500px}header .top_slider_wrap .top_slider .slider_item .slide_text{top:41%;width:100%;padding-bottom:100px}header .top_slider_wrap .top_slider .slider_item .slide_text h2{font-size:70px;letter-spacing:2px;line-height:80px}header .top_slider_wrap .top_slider .slick-dots{top:40%}header .top_slider_wrap .top_slider .slick-dots li{margin-bottom:20px}}@media screen and (max-width:768px){#menu{display:none}#sticky_menu{height:60px}#sticky_menu.default{padding-top:0}#mobile_menu{display:block;z-index:1001}.social_icons{width:calc(20% - 5px);padding-top:8px}.social_icons .icons_wrap{padding-top:0}header #sticky_menu #menu_wrap{height:60px}header #sticky_menu #menu_wrap .logo{height:50px;padding-top:13px}header #sticky_menu #menu_wrap #mobile_icon{line-height:50px}header #sticky_menu #menu_wrap #mobile_icon .hamburger{display:block;padding:0;padding-top:8px}header #sticky_menu #menu_wrap #mobile_icon .hamburger:active,header #sticky_menu #menu_wrap #mobile_icon .hamburger:focus{outline:0}header .top_slider_wrap .top_slider .slider_item{max-height:400px}header .top_slider_wrap .top_slider .slider_item .slide_text{top:35%}header .top_slider_wrap .top_slider .slider_item .slide_text h2{font-size:50px;letter-spacing:2px;line-height:80px}header .top_slider_wrap .top_slider .slider_item .slide_text span{font-size:14px}header .top_slider_wrap .top_slider .slick-dots{top:40%}header .top_slider_wrap .top_slider .slick-dots li{margin-bottom:20px}header .scroll_down{display:none}}@media screen and (max-width:640px){.social_icons{width:calc(30% - 10px)}header #sticky_menu #menu_wrap .logo{width:calc(35% - 15px)}header .top_slider_wrap .top_slider .slider_item{max-height:300px}header .top_slider_wrap .top_slider .slider_item .slide_text h2{font-size:35px;letter-spacing:1px}header .top_slider_wrap .top_slider .slider_item .slide_text span{font-size:12px;letter-spacing:2px}header .top_slider_wrap .top_slider .slick-dots{top:240px;left:0;bottom:0}header .top_slider_wrap .top_slider .slick-dots li{display:inline-block;margin-bottom:0;margin-right:15px}}@media screen and (max-width:462px){.social_icons{padding-top:20px;width:calc(30% - 10px)}.social_icons .icons_wrap li{width:calc(33.333% - 20px)}.social_icons .icons_wrap li a{border:none;top:-15px}header #sticky_menu #menu_wrap .logo{height:40px}header .top_slider_wrap .top_slider .slider_item{max-height:250px}header .top_slider_wrap .top_slider .slider_item .slide_text h2{font-size:28px;letter-spacing:0}header .top_slider_wrap .top_slider .slider_item .slide_text span{font-size:12px;letter-spacing:0}header .top_slider_wrap .top_slider .slick-dots{top:210px}}
+    </style>
+    <!--Critial CSS-->
+    <link rel="preload" href="assets/css/icomoon.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="assets/fonts/Gotham_bold/gotham_bold.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="assets/fonts/Gotham-Book/gotham-book-regular.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="assets/plugins/slick/slick.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="assets/plugins/slick/slick-theme.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="assets/plugins/fancybox/jquery.fancybox.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="assets/plugins/leaflet_map/leaflet.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="assets/plugins/hamburger/hamburgers.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/style.min.css" as="style" onload="this.rel='stylesheet'">
+</head>
+<body>
+    <div id="mobile_menu">
+        <ul id="mobile_nav">
+            <li class="active"><a href="#top_slider">About us</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#section3">News</a></li>
+            <li><a href="#map">Contact</a></li>
+        </ul>
+    </div>
+    <header>
+        <div id="sticky_menu" class="default">
+            <div class="container">
+                <div id="menu_wrap">
+                    <img class="logo" src="assets/images/logo-min.png" alt="logo">
+                    <nav id="menu">
+                        <ul id="menu_list">
+                            <li class="active"><a href="#top_slider">About us</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#section3">News</a></li>
+                            <li><a href="#map">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div id="mobile_icon">
+                        <button class="hamburger hamburger--collapse" type="button">
+                            <span class="hamburger-box">
+                              <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="social_icons">
+                        <ul class="icons_wrap">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank"><span class="icon-facebook"></span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/" target="_blank"><span class="icon-twitter"></span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank"><span class="icon-instagram"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+        </div> 
+        <div class="top_slider_wrap" id="top_slider">
+            <ul class="top_slider">
+                <li class="slider_item slide1">
+                        <img class="slide_img" src="assets/images/slide1-min.jpg" alt="slide1">
+                        <div class="slide_text">
+                            <h2>Simple & Modern</h2>
+                            <span>We make the world beautiful every day</span>
+                        </div>
+                </li>
+                <li class="slider_item slide2">
+                        <img class="slide_img" src="assets/images/slide2-min.jpg" alt="slide2"> 
+                        <div class="slide_text">
+                            <h2>Creative</h2>
+                            <span>We make the world beautiful every day</span>
+                        </div>
+                </li>
+                <li class="slider_item slide3">
+                        <img class="slide_img" src="assets/images/slide1-min.jpg" alt="slide1">
+                        <div class="slide_text">
+                            <h2>Innovative</h2>
+                            <span>We make the world beautiful every day</span>
+                        </div>
+                </li>
+                <li class="slider_item slide4">
+                        <img class="slide_img" src="assets/images/slide2-min.jpg" alt="slide1">
+                        <div class="slide_text">
+                            <h2>International</h2>
+                            <span>We make the world beautiful every day</span>
+                        </div>
+                </li>
+                <li class="slider_item slide5">
+                        <img class="slide_img" src="assets/images/slide1-min.jpg" alt="slide1">
+                        <div class="slide_text">
+                            <h2>Interesting</h2>
+                            <span>We make the world beautiful every day</span>
+                        </div>
+                </li>
+            </ul>
+            <a href="#projects" class="scroll_down"><span></span></a>
+        </div>     
+    </header>
+    <main>
+        <div class="container">
+            <article id="projects">
+                <h3>What we do</h3>
+                <section class="section1">
+                    <div class="img_wrap img1">
+                        <img class="lazy"  src="assets/images/pixel-min.png" data-src="assets/images/project1-min.jpg" alt="project1"> 
+                    </div>
+                    <div class="content_wrap">
+                        <span class="slogan">One world</span>
+                        <h4>Trade center</h4>
+                        <p class="section_text">
+                            Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
+                        </p>
+                        <div class="btn_wrap"><a class="btn btn-2" href="#">More details</a></div>
+                        <div class="address"><span class="icon-map-marker"></span> New York City, United States - 1776 feet</div>
+                    </div>
+                </section>
+                <section class="section2">
+                    <div class="content_wrap">
+                        <span class="slogan">International</span>
+                        <h4>Commerce center</h4>
+                        <p class="section_text">
+                            Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
+                        </p>
+                        <div class="btn_wrap"><a class="btn btn-2" href="#">More details</a></div>
+                        <div class="address"><span class="icon-map-marker"></span> Hong Kong - 1588 feet</div>
+                    </div>
+                    <div class="img_wrap img2">
+                        <img class="lazy"  src="assets/images/pixel-min.png" data-src="assets/images/project2-min.jpg" alt="project2"> 
+                    </div>
+                </section>
+            </article>
+        </div>
+        <div class="section3_wrap lazy" id="bg-image">
+            <div class="container">
+                <section id="section3">
+                    <h3>Latest news</h3>
+                    <div class="news_slider_wrap">
+                        <button type="button" class="news_btn prev_btn"></button>
+                        <button type="button" class="news_btn next_btn"></button>
+                        <div class="news_slider">
+                            <div class="news">
+                                <a href="#"><img src="assets/images/pixel-min.png" data-lazy="assets/images/new1-min.jpg" alt="new1"></a>
+                                <div class="news_text">
+                                    <div class="news_title"><a href="#">See the unmatched beauty of the great.</a></div>
+                                    <p class="news_content">Free directories: directories are perfect for customers that are... searching for</p>
+                                    <div class="author_info">
+                                            <img class="news_img" src="assets/images/pixel-min.png" data-lazy="assets/images/author1-min.jpg" alt="author_photo">
+                                        <div class="author">
+                                            <span class="name">Isaac Dunn</span>
+                                            <div class="date">09 Feb 2017</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news">
+                                <a href="#"><img src="assets/images/pixel-min.png" data-lazy="assets/images/new2-min.jpg" alt="new2"></a>
+                                <div class="news_text">
+                                    <div class="news_title"><a href="#">Effective advertising pointers.</a></div>
+                                    <p class="news_content">Having a home based business is a wonderful asset to your life...</p>
+                                    <div class="author_info">
+                                        <img class="news_img" src="assets/images/pixel-min.png" data-lazy="assets/images/author2-min.jpg" alt="author_photo" >
+                                        <div class="author">
+                                            <span class="name">Dominic&nbsp;Freeman</span>
+                                            <div class="date">24 Apr 2017</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news">
+                                <a href="#"><img src="assets/images/pixel-min.png" data-lazy="assets/images/new3-min.jpg" alt="new3"></a>
+                                <div class="news_text">
+                                    <div class="news_title"><a href="#">Hypnotize yourself into the ghost</a></div>
+                                    <p class="news_content">There are many things that are important to catalog design...</p>
+                                    <div class="author_info">
+                                        <img class="news_img" src="assets/images/pixel-min.png" data-lazy="assets/images/author3-min.jpg" alt="author_photo">
+                                        <div class="author">
+                                            <span class="name">Alice Ward</span>
+                                            <div class="date">30 Dec 2017</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news">
+                                <a href="#"><img src="assets/images/pixel-min.png" data-lazy="assets/images/new2-min.jpg" alt="new4"></a>
+                                <div class="news_text">
+                                    <div class="news_title"><a href="#">There should be title for fourth new.</a></div>
+                                    <p class="news_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+                                    <div class="author_info">
+                                        <img class="news_img" src="assets/images/pixel-min.png" data-lazy="assets/images/author1-min.jpg" alt="author_photo">
+                                        <div class="author">
+                                            <span class="name">Sandy Clark</span>
+                                            <div class="date">28 Jul 2018</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news">
+                                <a href="#"><img src="assets/images/pixel-min.png" data-lazy="assets/images/new1-min.jpg" alt="new5"></a>
+                                <div class="news_text">
+                                    <div class="news_title"><a href="#">Title of fifth new should be here.</a></div>
+                                    <p class="news_content">Recusandae impedit, neque a temporibus, nemo, aperiam... </p>
+                                    <div class="author_info">
+                                        <img class="news_img" src="assets/images/pixel-min.png" data-lazy="assets/images/author3-min.jpg" alt="author_photo">
+                                        <div class="author">
+                                            <span class="name">John Smith</span>
+                                            <div class="date">30 Aug 2018</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </section>
+            </div>
+        </div>
+        <div class="section4_wrap">
+            <div class="container">
+                <section class="section4">
+                    <h3>Gallery</h3>
+                    <div class="gallery_wrap">
+                        <div class="left_col">
+                            <div class="img_wrap_left img_hover">
+                                <a href="assets/images/gallery1-large-min.jpg" data-fancybox="gallery" data-caption="Building #1">
+                                    <div class="plus"></div>
+                                    <img class="lazy"  src="assets/images/pixel-min.png" data-src="assets/images/gallery1-thumb-min.jpg" alt="building1">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right_col">
+                            <div class="img_wrap img_hover">
+                                <a href="assets/images/gallery2-large-min.jpg" data-fancybox="gallery" data-caption="Building #2">
+                                    <div class="plus"></div>
+                                    <img class="lazy"  src="assets/images/pixel-min.png" data-src="assets/images/gallery2-thumb-min.jpg" alt="building2">
+                                </a>
+                            </div>
+                            <div class="img_wrap img_hover">
+                                <a href="assets/images/gallery3-large-min.jpg" data-fancybox="gallery" data-caption="Building #3">
+                                    <div class="plus"></div>
+                                    <img class="lazy"  src="assets/images/pixel-min.png" data-src="assets/images/gallery3-thumb-min.jpg" alt="building3">
+                                </a>
+                            </div>
+                            <div class="img_wrap img_hover">
+                                <a href="assets/images/gallery4-large-min.jpg" data-fancybox="gallery" data-caption="Building #4">
+                                    <div class="plus"></div>
+                                    <img class="lazy"  src="assets/images/pixel-min.png" data-src="assets/images/gallery4-thumb-min.jpg" alt="building4">
+                                </a>
+                            </div>
+                            <div class="img_wrap img_hover">
+                                <a href="assets/images/gallery5-large-min.jpg" data-fancybox="gallery" data-caption="Building #5">
+                                    <div class="plus"></div>
+                                    <img class="lazy"  src="assets/images/pixel-min.png" data-src="assets/images/gallery5-thumb-min.jpg" alt="building5">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_wrap">
+                        <a class="btn btn-2" href="#">See more</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="map"></div>
+    </main>
+    <footer class="lazy" id="bg-image2">
+        <div class="footer_wrap">
+            <div class="foo_logo">
+                <img class="logo lazy" src="assets/images/pixel-min.png" data-src="assets/images/logo-min.png" alt="logo">
+                <div class="social_icons">
+                    <ul class="icons_wrap">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><span class="icon-facebook"></span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com/" target="_blank"><span class="icon-twitter"></span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank"><span class="icon-instagram"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">Copyrights &copy; 2017 Monticello &nbsp;	| &nbsp; Made with 	<span>&#x2764;</span> by Ga Huy</div>
+            <div class="contacts_wrap lazy" id="bg-image3">
+                <h3>Get in touch</h3>
+                <div class="contacts">
+                    <div class="contacts_info">
+                        <div><span class="icon icon-map-marker"></span> 91 Nolan Extensions Suite 670</div>
+                        <div><span class="icon icon-phone"></span> +001 356-868-2454</div>
+                        <div><span class="icon icon-inbox"></span> gahuy93@gmail.com</div>
+                        <div><span class="icon icon-clock-o"></span> From 07:05AM to 19:30PM</div>
+                    </div>
+                    <form method="GET">
+                        <div class="form_wrap">
+                            <input type="text" placeholder="Full name">
+                            <input type="email" placeholder="Email">
+                            <div class="btn_wrap"><button class="btn btn-2" type="submit">Submit</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.min.js"></script>
+    <script src="assets/js/lazyload.min.js"></script>
+    <script src="assets/plugins/slick/slick.min.js"></script>
+    <script src="assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/plugins/leaflet_map/leaflet.min.js"></script>
+    <script src="assets/plugins/leaflet_map/TileLayer.Grayscale.min.js"></script>
+    <script src="assets/js/onload.min.js"></script>
+</body>
+</html>
