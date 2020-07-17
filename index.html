@@ -28,6 +28,26 @@
     <link rel="preload" href="assets/plugins/leaflet_map/leaflet.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="assets/plugins/hamburger/hamburgers.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="assets/css/style.min.css" as="style" onload="this.rel='stylesheet'">
+    <script>window.performance.mark('mark_preload_css');</script>
+
+    <script>
+        const SITE_URL = '';
+        function supportsPreload(){var rl=document.createElement("link").relList;if(rl.supports && "preload"){return rl.supports("preload");}else{return false;}}
+        if(!supportsPreload()){
+            var style_links = document.getElementsByClassName("style_link");
+            for(let i=0;i<style_links.length;i++){
+                style_links[i].setAttribute("rel", "stylesheet");
+                style_links[i].removeAttribute("as");
+                style_links[i].removeAttribute("onload");
+            }
+            var font_links = document.getElementsByClassName("font_link");
+            for(let i=0;i<font_links.length;i++){
+                font_links[i].setAttribute("rel", "font");
+            }
+        }
+    </script>
+    <script>window.performance.mark('mark_load_css');</script>
+
 </head>
 <body>
     <div id="mobile_menu">
@@ -304,8 +324,8 @@
                 <div class="contacts">
                     <div class="contacts_info">
                         <div><span class="icon icon-map-marker"></span> 91 Nolan Extensions Suite 670</div>
-                        <div><span class="icon icon-phone"></span> +001 356-868-2454</div>
-                        <div><span class="icon icon-inbox"></span> gahuy93@gmail.com</div>
+                        <div><span class="icon icon-phone"></span><a href="viber://chat?number=+0013568682454"> +001 356-868-2454</a></div>
+                        <div><span class="icon icon-inbox"></span><a href="mailto:gahuy93@gmail.com"> gahuy93@gmail.com</a></div>
                         <div><span class="icon icon-clock-o"></span> From 07:05AM to 19:30PM</div>
                     </div>
                     <form method="GET">

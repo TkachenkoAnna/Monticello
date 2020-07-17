@@ -534,7 +534,7 @@
     }
     #mobile_menu {
       display: block;
-      z-index: 1001;
+      z-index: 500;
     }
     .social_icons {
       width: calc(20% - 5px);
